@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -84,11 +85,12 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Type Race Project */}
             <div className="group bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-xl border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-300 hover:transform hover:scale-105">
-              <div className="h-48 bg-gradient-to-br from-cyan-600/20 to-blue-600/20 rounded-lg mb-6 overflow-hidden">
-                <img 
+              <div className="h-48 bg-gradient-to-br from-cyan-600/20 to-blue-600/20 rounded-lg mb-6 overflow-hidden relative">
+                <Image 
                   src="/typeraceonline.png" 
                   alt="Type Race Online Screenshot" 
-                  className="w-full h-full object-cover rounded-lg"
+                  fill
+                  className="object-cover rounded-lg"
                 />
               </div>
               <h3 className="text-2xl font-bold mb-3 text-cyan-400">Type Race Online</h3>
@@ -202,7 +204,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Ready to build something amazing together? Let's connect!
+              Ready to build something amazing together? Let&apos;s connect!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
