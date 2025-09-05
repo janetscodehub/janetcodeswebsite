@@ -220,7 +220,7 @@ export default function Home() {
                 LinkedIn
               </a>
               <a
-                href="https://github.com/janetcodehubs"
+                href="https://github.com/janetscodehub"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 border-2 border-purple-400 text-purple-400 rounded-full font-semibold hover:bg-purple-400 hover:text-black transition-all duration-300"
